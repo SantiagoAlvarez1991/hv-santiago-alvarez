@@ -2,25 +2,41 @@ import foto from '../../assets/foto.png'
 
 import { about } from '../../data/data'
 import { Social } from '../Social'
+import { AboutWrapper } from './About.styles'
 
 const About = () => {
+
+  
+  
+  const introduction = about.primary
+  const underlinedTextIndex = introduction.indexOf('fortalecer')
+
+  const getNormalicedText = () : string => {    
+    return introduction.slice(0, underlinedTextIndex)
+  }
+  
+  const getUnderlinedText = () : string => {    
+    return introduction.slice(underlinedTextIndex)
+  }
+
+  
+
   return (
-    <section>
+    <AboutWrapper>
         <div>
-            <img src={foto} alt='Foto Santiago Alvarez Eraso' width='200px'/>
+            <img src={foto} alt='Foto Santiago Alvarez Eraso'/>
             <div>
                 <Social />
             </div>
         </div>
         <div>
-            <h3>Sobre mí</h3>
-            <p>{about.primary}</p>
+            <h3>Sobre <span>mí</span></h3>
+            <p>{getNormalicedText()}<span>{getUnderlinedText()}</span></p>
             <p>{about.secondary}</p>
             <p>{about.tertiary}</p>
             <a href='/'>Contáctame</a>
-        </div>
-      
-    </section>
+        </div>      
+    </AboutWrapper>
   )
 }
 

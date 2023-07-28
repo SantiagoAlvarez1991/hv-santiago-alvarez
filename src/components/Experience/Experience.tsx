@@ -1,37 +1,40 @@
 import { experience } from "../../data/data"
-import { Skills } from "../Talent"
+import { SkillsList } from "../Talent"
+import { ExperienceWrapper, ExperienceCard, AboutWrapper, InnerSubtitle, SkillsWrapper, TitleWrapper } from "./Experience.styles"
 
 const Experience = () => {
     return (
-        <section>
-            <h3>Experiencia</h3>
+        <ExperienceWrapper>
+            <h4>Experiencia</h4>
             {experience.map(oneExperience => (
-                <article key={`${oneExperience.title}-${oneExperience.date}`}>
-                    <div>
+                <ExperienceCard key={`${oneExperience.title}-${oneExperience.date}`}>
+                    <TitleWrapper>
                         <p>{oneExperience.title}</p>
                         <p>{oneExperience.place}</p>
                         <p>{oneExperience.date}</p>
-                    </div>
-                    <div>
+                    </TitleWrapper>
+                    <AboutWrapper>
                         <div>
                             <p>{oneExperience.about}</p>
                         </div>
                         <div>
-                            <p>Producto</p>
+                            <InnerSubtitle>Producto</InnerSubtitle>
                             <p>{oneExperience.product}</p>
-                            <p>Funciones</p>
+                            <InnerSubtitle>Funciones</InnerSubtitle>
                             <ul>{oneExperience.functions.map(oneFunction => (
                                 <li key={oneFunction}>{oneFunction}</li>
                             ))}
                             </ul>
-                            <p>Tecnologías</p>
-                            <Skills skills={oneExperience.skills}/>
+                            <InnerSubtitle>Tecnologías</InnerSubtitle>
+                            <SkillsWrapper>
+                                <SkillsList skills={oneExperience.skills}/>
+                            </SkillsWrapper>
                         </div>
-                    </div>
-                </article>
+                    </AboutWrapper>
+                </ExperienceCard>
             ))}
 
-        </section>
+        </ExperienceWrapper>
     )
 }
 

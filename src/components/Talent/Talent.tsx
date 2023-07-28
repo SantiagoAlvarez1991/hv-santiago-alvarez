@@ -1,20 +1,20 @@
-import { Skills } from "."
+import { SkillsList } from "."
 import { talent } from "../../data/data"
+import { H4Variation } from "../../globalStyles"
+import { TalentWrapper, Technologies, Skills } from "./Talent.styles"
 
 const Talent = () => {
     return (
-        <section>
-            <article>
-                <h3>Tecnologías</h3>
-                {talent.technologies.map(technology => (
-                    <p key={technology}>{technology}</p>
-                ))}
-            </article>
-            <article>
-                <h3>Habilidades</h3>
-                <Skills skills={talent.skills} />
-            </article>
-        </section>
+        <TalentWrapper>
+            <Technologies>
+                <H4Variation>Tecnologías</H4Variation>              
+                <SkillsList skills={talent.technologies} />
+            </Technologies>
+            <Skills>
+                <h4>Habilidades</h4>
+                <SkillsList skills={talent.skills} />
+            </Skills>
+        </TalentWrapper>
     )
 }
 

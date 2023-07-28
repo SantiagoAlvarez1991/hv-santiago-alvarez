@@ -4,7 +4,7 @@ import { training } from '../../data/data'
 const Tools = () => {
   return (
     <section>
-        <h4>Herramientas</h4>
+        <h5>Herramientas</h5>
         <ul>
             {training.tools.map(tool => (
                 <li key={tool}>

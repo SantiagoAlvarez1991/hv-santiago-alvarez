@@ -37,7 +37,7 @@ interface Training {
 
 export const about: About = {
     primary: "Motivado por encontrar soluciones creativas, la experiencia adquirida en el campo tecnológico y gráfico me ha permitido desarrollar competencias para abordar integralmente las necesidades del usuario y fortalecer las experiencias en productos digitales.",
-    secondary: "Actualmente estoy en busqueda de mi primera oportunidad laboral en desarrollo Front End para poner en práctica mis conocimientos adquiridos en HTML, CSS, JavaScript, TypeScript (React, Next Js, Jest)",
+    secondary: "Actualmente estoy en busqueda de mi primera oportunidad laboral en desarrollo Front End para poner en práctica mis conocimientos adquiridos en HTML, CSS, JavaScript, TypeScript, React, Next.Js.",
     tertiary: "Estoy en constante aprendizaje, con actitud proactiva frente a nuevos retos y capacidad de trabajo en equipo."
 }
 

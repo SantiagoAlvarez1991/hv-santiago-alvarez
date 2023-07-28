@@ -3,7 +3,7 @@ import { training } from "../../data/data"
 const Education = () => {
   return (
     <section>
-        <h3>Educación</h3>
+        <h4>Educación</h4>
         {training.studies.map(degree => (
             <article key={degree.title}>
                 <p>{degree.title}</p>

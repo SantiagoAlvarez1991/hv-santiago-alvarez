@@ -4,7 +4,7 @@ import { training } from "../../data/data"
 const Languages = () => {
   return (
     <section>
-        <h4>Idiomas</h4>
+        <h5>Idiomas</h5>
         {training.languages.map(language => (
             <article key={language.title}>
                 <p>{language.title}</p>

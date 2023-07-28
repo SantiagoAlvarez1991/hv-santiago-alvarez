@@ -11,9 +11,7 @@ export const HeaderWrapper =  styled.header`
     justify-content: center;
     align-items: center;
     padding: 15%;
-    h2{
-        margin-block-end: 0;
-        margin-block-start: 0;
+    h2{        
         text-align: right;
         margin-top: -20px ;
     }
@@ -25,6 +23,9 @@ export const HeaderWrapper =  styled.header`
     svg{
         position: absolute;
         bottom: 15%;
+        /* circle{
+            fill: red;
+        } */
     }   
 `
 
