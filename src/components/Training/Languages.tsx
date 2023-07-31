@@ -1,17 +1,20 @@
 import { training } from "../../data/data"
+import { LanguagesWrapper, LanguageCard } from "./Laguages.styles"
 
 
 const Languages = () => {
   return (
-    <section>
+    <LanguagesWrapper>
         <h5>Idiomas</h5>
-        {training.languages.map(language => (
-            <article key={language.title}>
-                <p>{language.title}</p>
-                <p>{language.level}</p>
-            </article>
-        ))}
-    </section>
+        <div>
+          {training.languages.map(language => (
+              <LanguageCard key={language.title}>
+                  <p>{language.title}</p>
+                  <p>{language.level}</p>
+              </LanguageCard>
+          ))}
+        </div>
+    </LanguagesWrapper>
   )
 }
 

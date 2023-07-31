@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const AboutWrapper = styled.section`
-    padding: 7% 3%;
+    padding: 60px 3% 7%;
+    //padding-top: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +52,7 @@ export const AboutWrapper = styled.section`
                 display: block;   
                 padding: 15px 0; 
                 font-weight: 700 ;
+                font-size: 14px;
                 &:visited{
                     color: #FFF;
                 }

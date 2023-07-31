@@ -22,7 +22,7 @@ const About = () => {
   
 
   return (
-    <AboutWrapper>
+    <AboutWrapper id='about'>
         <div>
             <img src={foto} alt='Foto Santiago Alvarez Eraso'/>
             <div>

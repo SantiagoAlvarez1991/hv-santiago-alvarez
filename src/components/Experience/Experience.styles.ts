@@ -4,7 +4,7 @@ export const ExperienceWrapper = styled.section`
     margin: 15px 3% 0;
     padding: 23px;
     background-color: #FFF;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     position: relative;
     h4 {          
          &::before{          
@@ -19,6 +19,9 @@ export const ExperienceCard = styled.article`
     margin-bottom: 20px;
     ul{
         padding: 0 0 0 20px;        
+    };
+    &:last-of-type{
+        margin-bottom: 0px;
     }   
 `
 
@@ -78,7 +81,7 @@ export const SkillsWrapper = styled.div`
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    margin: 10px 0;
+    margin-top: 10px;
     p{
         margin: 0;
         padding: 5px 10px;

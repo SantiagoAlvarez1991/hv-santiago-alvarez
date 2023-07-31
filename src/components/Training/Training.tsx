@@ -9,7 +9,6 @@ const Training = () => {
         <Education />
         <Languages />
         <Tools />
-
     </div>
   )
 }

@@ -1,18 +1,19 @@
 import { training } from "../../data/data"
+import { EducationWrapper, EducationCard } from "./Education.styles"
 
 const Education = () => {
   return (
-    <section>
+    <EducationWrapper>
         <h4>Educación</h4>
         {training.studies.map(degree => (
-            <article key={degree.title}>
+            <EducationCard key={degree.title}>
                 <p>{degree.title}</p>
                 <p>{degree.date}</p>
                 <p>{degree.place}</p>
                 {!!degree.city && <p>{degree.city}</p> }
-            </article>
+            </EducationCard>
         ))}
-    </section>
+    </EducationWrapper>
   )
 }
 

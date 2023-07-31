@@ -7,7 +7,10 @@ const GlobalStyles = createGlobalStyle`
     }
     *{
         box-sizing: border-box;
-    }   
+    } 
+    html{
+        scroll-behavior: smooth
+    }  
     body {
         margin: 0;
         padding: 0;        
@@ -44,13 +47,13 @@ const GlobalStyles = createGlobalStyle`
             position: absolute;
             top:32px;                 
             width:20px;
-            height: 5px;
-            //background-color: ${props => props.theme.green};
+            height: 5px;            
         }           
     }
     h5 {
         font-size: 28px;
         font-weight: 300;
+        margin-bottom: 20px;
     }
 `
 export default GlobalStyles

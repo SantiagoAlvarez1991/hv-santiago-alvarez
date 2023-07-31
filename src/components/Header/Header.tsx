@@ -16,7 +16,9 @@ const Header = () => {
           <p>Diseñador Gráfico</p>
         </Subtitle>
       </div>
-      <GoDown />
+      <a href='#about'>
+        <GoDown/>
+      </a>
 
 
     </HeaderWrapper>

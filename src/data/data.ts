@@ -100,7 +100,7 @@ export const training : Training = {
             title: 'Diseñador Gráfico y Multimedial',
             date: '2021 - 2022',
             place: 'Universidad de Nariño ',
-            city: 'Pasto - Colombia'
+            city: 'Pasto, Colombia'
         }
     ],
     languages : [
