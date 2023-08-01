@@ -1,14 +1,16 @@
 import logo from '../../assets/isotipo.svg'
 import { GoDown } from '../Icons'
-import { HeaderWrapper, Subtitle } from './Header.styles'
+import { HeaderWrapper, Subtitle, ImageWrapper } from './Header.styles'
 
 
 const Header = () => {
   return (
     <HeaderWrapper>
       <div>
+        <ImageWrapper>
+          <img src={logo} alt='logo'/>
+        </ImageWrapper>
 
-        <img src={logo} alt='logo'/>
         <h2>Santiago</h2>
         <Subtitle>
           <h2>Alvarez Eraso</h2>

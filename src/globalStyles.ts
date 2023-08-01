@@ -55,6 +55,11 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 300;
         margin-bottom: 20px;
     }
+    @media(min-width: ${props => props.theme.screenSize.desktop}){
+        h3 {
+            font-size: 48px;        
+        }
+    }
 `
 export default GlobalStyles
 
