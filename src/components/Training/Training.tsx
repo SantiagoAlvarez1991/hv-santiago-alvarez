@@ -1,15 +1,16 @@
 import Education from "./Education"
 import Languages from "./Languages"
 import Tools from "./Tools"
+import { TrainingWrapper } from "./Training.styles"
 
 
 const Training = () => {
   return (
-    <div>
+    <TrainingWrapper>
         <Education />
         <Languages />
         <Tools />
-    </div>
+    </TrainingWrapper>
   )
 }
 

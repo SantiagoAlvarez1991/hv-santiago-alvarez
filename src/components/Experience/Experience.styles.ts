@@ -9,8 +9,14 @@ export const ExperienceWrapper = styled.section`
     h4 {          
          &::before{          
             background-color: ${props => props.theme.green};
-            top: 55px
+            top: 55px;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                top: 124px
+            }
         }           
+    }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        padding: 72px 30px 55px 130px;
     }
 `
 
@@ -23,6 +29,10 @@ export const ExperienceCard = styled.article`
     &:last-of-type{
         margin-bottom: 0px;
     }   
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
 `
 
 export const TitleWrapper = styled.div`
@@ -38,15 +48,24 @@ export const TitleWrapper = styled.div`
             font-weight: 800;
             font-size: 18px;
             width: 100%;
-            color: ${props => props.theme.green}
+            color: ${props => props.theme.green};
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                font-size: 24px;
+            }
         };
         &:nth-child(2){            
             font-weight: 700;
             font-size: 13px;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                font-size: 14px;
+            }
         };
         &:nth-child(3){
             font-weight: 400;
             font-size: 13px;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                font-size: 16px;
+            }
         };
     }
 `
@@ -56,6 +75,14 @@ export const AboutWrapper = styled.div`
             p{
                 font-weight: 500;
                 margin: 10px 0;
+                @media (min-width: ${props => props.theme.screenSize.desktop}){
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin: 20px 0;
+                }
+            }
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                width: calc(37% - 30px) 
             }
         }       
         &:nth-child(2){
@@ -64,7 +91,14 @@ export const AboutWrapper = styled.div`
                     margin: 5px 0 0 0;
                 }
             }
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                width: 63%;
+            }
         }       
+    }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        display: flex;
+        gap: 30px;
     }
    
 `
@@ -73,6 +107,9 @@ export const InnerSubtitle = styled.p`
     font-weight: 800;
     font-size: 13px;
     margin: 20px 0 0 0;
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        font-size: 14px;
+    }
     
 `
 
@@ -82,6 +119,7 @@ export const SkillsWrapper = styled.div`
     align-items: center;
     gap: 8px;
     margin-top: 10px;
+    font-size: 12px;
     p{
         margin: 0;
         padding: 5px 10px;

@@ -5,19 +5,22 @@ export const ContactWrapper = styled.section`
     h4{
         color: ${props => props.theme.gray};
         text-align: center;
+        width: 100%;
     }
     form{
         margin: 15px 3% 0;
         padding: 18px 23px 23px;
         background-color: #FFF;
-        border-radius: 15px;
-                
+        border-radius: 15px;                
         label{
             display: block;
             margin-bottom: 5px;
             margin-top: 20px;
             font-size: 16px;
             font-weight: 400;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                margin-top: 0px;
+            }
         }
         input, textarea{
             font-family: 'Red Hat Display', sans-serif;
@@ -51,6 +54,18 @@ export const ContactWrapper = styled.section`
                 border: solid 1px ${props => props.theme.lightGreen};
             }
         }
+        @media (min-width: ${props => props.theme.screenSize.desktop}){
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            //justify-content: center;
+            div{
+                width: calc(50% - 10px);
+                &:last-of-type{
+                    width: 100%;
+                }
+            }
+        }       
     }
     section{
         display: flex;
@@ -60,6 +75,11 @@ export const ContactWrapper = styled.section`
         svg{
             width: 30px;
         }
+    }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        //width: 50%;
+        max-width: 780px;
+        margin: 30px auto 0;
     }
 `
 
@@ -74,4 +94,7 @@ export const Button = styled.button`
     color: #fff;
     font-weight: 700 ;
     font-size: 14px;
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        width: 150px;     
+    }
 `

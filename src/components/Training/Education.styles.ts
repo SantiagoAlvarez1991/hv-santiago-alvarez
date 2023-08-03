@@ -9,7 +9,14 @@ export const EducationWrapper = styled.section`
         padding-bottom: 8px ;
          &::before{          
             background-color: ${props => props.theme.gray};
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                top: 52px;
+            }
         }           
+    }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        background-color: ${props => props.theme.softBackground};
+        margin-bottom: 40px;
     }
 `
 
@@ -21,10 +28,16 @@ export const EducationCard = styled.article`
         &:nth-child(1){
             font-size: 16px;
             font-weight: 900;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                font-size: 18px
+            }
         }
         &:nth-child(2){
             font-size: 18px;
             font-weight: 300;
+            @media (min-width: ${props => props.theme.screenSize.desktop}){
+                font-size: 20px
+            }
         }
         &:nth-child(3),  &:nth-child(4){
             font-size: 13px;
@@ -34,4 +47,7 @@ export const EducationCard = styled.article`
     &:last-of-type{
         margin-bottom: 0;
     }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        margin-right: 90px;}
+    
 `

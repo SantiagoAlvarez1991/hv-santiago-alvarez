@@ -21,4 +21,8 @@ export const ToolsWrapper = styled.section`
     img{
         margin-right: 10px;
     }
+    @media (min-width: ${props => props.theme.screenSize.desktop}){
+        background-color: ${props => props.theme.softBackground};
+        font-size: 16px;
+    }
 `

@@ -26,7 +26,10 @@ const GlobalStyles = createGlobalStyle`
         #FFF 40%,
         #F5F6F7 40%,
         #F5F6F7 100%
-        )
+        );
+        @media(min-width: ${props => props.theme.screenSize.desktop}){
+            background: #FFF
+        }
     }
     h1, h2, h3, h4, h5{
         margin: 0;
@@ -47,13 +50,24 @@ const GlobalStyles = createGlobalStyle`
             position: absolute;
             top:32px;                 
             width:20px;
-            height: 5px;            
-        }           
+            height: 5px; 
+            @media(min-width: ${props => props.theme.screenSize.desktop}){                
+                width:35px;
+                height: 7px;             
+            }             
+        }   
+        @media(min-width: ${props => props.theme.screenSize.desktop}){
+            font-size: 48px;            
+        }        
     }
     h5 {
         font-size: 28px;
         font-weight: 300;
         margin-bottom: 20px;
+        @media(min-width: ${props => props.theme.screenSize.desktop}){
+            font-size: 36px;  
+            //font-weight: 900;          
+        }   
     }
     @media(min-width: ${props => props.theme.screenSize.desktop}){
         h3 {
@@ -68,4 +82,8 @@ export const H4Variation = styled.h4`
     color: rgba(255,255,255, .4);
     font-weight: 900;
     margin-bottom: 21px;
+    @media(min-width: ${props => props.theme.screenSize.desktop}){
+        font-size: 96px;
+        margin-bottom: 0px;
+    }
 `
