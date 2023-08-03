@@ -3,7 +3,7 @@ import { H4Variation } from "../../globalStyles"
 import { Social } from "../Social"
 import { ContactWrapper, Button } from "./Contact.styles"
 //import { EmailResponse, sendEmail } from "../../service/email"
-import { useFetch } from "../../hooks/useFetch"
+//import { useFetch } from "../../hooks/useFetch"
 
 export interface Message {
   name: string;
@@ -19,14 +19,14 @@ const Contact = () => {
     message: ''
   })
 
-  const [isActive, setIsActive] = useState(false)
+  //const [isActive, setIsActive] = useState(false)
 
-  const {isError,isLoading,response} = useFetch(message, isActive)
+  //const {isError,isLoading,response} = useFetch(message, isActive)
   //const [response, setResponse] = useState<EmailResponse | string>()
 
   const handleSubmit = async(e : FormEvent<HTMLFormElement>) => {
     e.preventDefault() 
-    setIsActive(true)
+    //setIsActive(true)
     //setResponse(await sendEmail(message))      
   }
 
@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   //console.log(isError);
-  console.log(isLoading);
+  //console.log(isLoading);
   //console.log(response);
   
   
