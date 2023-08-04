@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react"
+import { ChangeEvent, FormEvent, useState } from 'react'
 import { H4Variation } from "../../globalStyles"
 import { Social } from "../Social"
 import { ContactWrapper, Button } from "./Contact.styles"
