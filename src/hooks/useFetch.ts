@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Message } from "../components/Contact/Contact"
+import { Message } from "../version1/components/Contact/Contact"
 import { EmailResponse, sendEmail } from "../service/email"
 
 export const useFetch = (message : Message, isActive: boolean = false) => {

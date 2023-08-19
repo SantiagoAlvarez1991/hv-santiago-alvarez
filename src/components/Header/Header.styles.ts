@@ -10,7 +10,7 @@ export const HeaderWrapper =  styled.header`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16%;
+    padding: 12%;
     h2{        
         text-align: right;
         margin-top: -20px ;

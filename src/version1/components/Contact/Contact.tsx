@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
-import { H4Variation } from "../../globalStyles"
-import { Social } from "../Social"
+import { H4Variation } from "../../../globalStyles"
+import { Social } from "../../../components/Social"
 import { ContactWrapper, Button } from "./Contact.styles"
 //import { EmailResponse, sendEmail } from "../../service/email"
 //import { useFetch } from "../../hooks/useFetch"

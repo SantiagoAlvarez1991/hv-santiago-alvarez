@@ -2,13 +2,14 @@
 //import linkedIn from '../../assets/LinkedIn.svg'
 
 import { GitHub, LinkedIn } from "../Icons"
+import { SocialWrapper } from "./Social.styles"
 
 const Social = () => {
     return (
-        <>
-           <LinkedIn />
-           <GitHub />
-        </>
+        <SocialWrapper>
+            <LinkedIn />
+            <GitHub />
+        </SocialWrapper>
     )
 }
 

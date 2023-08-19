@@ -1,5 +1,5 @@
 import bullet from '../../assets/bullet.svg'
-import { training } from '../../data/data'
+import { training } from '../../../data/data'
 import { ToolsWrapper } from './Tools.styles'
 
 const Tools = () => {

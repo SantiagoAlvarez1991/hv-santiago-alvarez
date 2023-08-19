@@ -1,4 +1,4 @@
-import { training } from "../../data/data"
+import { training } from "../../../data/data"
 import { LanguagesWrapper, LanguageCard } from "./Laguages.styles"
 
 

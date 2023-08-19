@@ -1,4 +1,4 @@
-import { experience } from "../../data/data"
+import { experience } from "../../../data/data"
 import { SkillsList } from "../Talent"
 import { ExperienceWrapper, ExperienceCard, AboutWrapper, InnerSubtitle, SkillsWrapper, TitleWrapper } from "./Experience.styles"
 

@@ -1,4 +1,4 @@
-import { Message } from "../components/Contact/Contact";
+import { Message } from "../version1/components/Contact/Contact";
 
 export interface EmailResponse {
     message: string;

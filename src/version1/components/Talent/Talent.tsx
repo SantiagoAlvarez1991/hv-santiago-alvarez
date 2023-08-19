@@ -1,6 +1,6 @@
 import { SkillsList } from "."
-import { talent } from "../../data/data"
-import { H4Variation } from "../../globalStyles"
+import { talent } from "../../../data/data"
+import { H4Variation } from "../../../globalStyles"
 import { TalentWrapper, Technologies, Skills } from "./Talent.styles"
 
 const Talent = () => {

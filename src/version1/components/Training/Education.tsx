@@ -1,4 +1,4 @@
-import { training } from "../../data/data"
+import { training } from "../../../data/data"
 import { EducationWrapper, EducationCard } from "./Education.styles"
 
 const Education = () => {
