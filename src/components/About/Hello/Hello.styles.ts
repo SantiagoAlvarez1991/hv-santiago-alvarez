@@ -41,6 +41,7 @@ export const ImageWrapper = styled.div`
         color: #FFF;
     }
     span{
+        font-size: 1.2rem; 
         font-weight: 700;
         text-decoration: underline;
     }
@@ -53,8 +54,7 @@ export const ContactWrapper = styled.div`
     margin: 12px 0;
     display: flex;
     gap: 10px;
-    a, button {
-        font-size: 1.2rem; 
+    a, button {         
         padding: 12px 0;
         font-weight: 800;
         border-radius: 10px;
@@ -65,12 +65,15 @@ export const ContactWrapper = styled.div`
         svg{
             font-size: 16px;
         }
+        span{
+            font-size: 1.2rem; 
+        }
     }    
     a{
         text-align: center;
         background-color: ${props => props.theme.green};
         text-decoration: none;
-        color: #FFF;  
+        color: #FFF;
 
         // flex-grow: reparte espacio entre segun el número que se le coloque, entre más alto el número, va a ocupar mas espacio, todos los hijos deben tener esta propiedad
         // flex-shrink: entre más alto el número, se va a encoger más que los demás
@@ -82,7 +85,7 @@ export const ContactWrapper = styled.div`
             color: #FFF;
         }
     }
-    button{
+    button{        
         font-family: 'Red Hat Display', sans-serif;
         border: 1px solid ${props => props.theme.gray};
         background-color: transparent;           

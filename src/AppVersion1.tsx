@@ -1,4 +1,4 @@
-import { Main, ExperienceAndTraining } from "./App.styles"
+import { Main} from "./App.styles"
 import { About } from "./version1/components/About"
 import { Contact } from "./version1/components/Contact"
 import { Experience } from "./version1/components/Experience"
@@ -19,10 +19,10 @@ function App() {
       <Header />
       <About />
       <Talent />
-      <ExperienceAndTraining>
+      {/* <ExperienceAndTraining> */}
         <Experience />
         <Training />
-      </ExperienceAndTraining>
+      {/* </ExperienceAndTraining> */}
       <Contact />
       {/* <section>
         <Social />

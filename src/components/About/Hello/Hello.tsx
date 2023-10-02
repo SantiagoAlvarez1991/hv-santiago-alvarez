@@ -1,5 +1,5 @@
 //import foto from '../../../assets/foto.png'
-import fotoSantiago from '../../../assets/fotoSantiago.png'
+//import fotoSantiago from '../../../assets/fotoSantiago.png'
 import { Social } from '../../Social'
 import { ImageWrapper, Wellcome, ContactWrapper } from './Hello.styles'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -13,7 +13,8 @@ const Hello = () => {
         <Social />
       </Wellcome>
       <ImageWrapper>
-        <img src={fotoSantiago} />        
+        {/* <img src={fotoSantiago} />         */}
+        <img src={'/fotoSantiago.png'} />        
         <p>Aquí vas a encontrar infromación de mi trabajo y experiencia como <span>desarrollador Front End.</span></p>
       </ImageWrapper>
       <ContactWrapper>        

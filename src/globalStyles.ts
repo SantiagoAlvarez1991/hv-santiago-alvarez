@@ -7,17 +7,18 @@ const GlobalStyles = createGlobalStyle`
     }
     *{
         box-sizing: border-box;
+        font-size: 10px;
     } 
     html{
         scroll-behavior: smooth;
-        font-size: 10px;
     }  
     body {
         margin: 0;
         padding: 0;        
         font-family: 'Red Hat Display', sans-serif;
         //color: var(--textColor);        
-        color: ${props => props.theme.textColor};   
+        color: ${props => props.theme.textColor};  
+        //min-height: 100vh; 
         
         @media (min-width: ${props => props.theme.screenSize.desktop}) {
             

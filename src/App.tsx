@@ -1,5 +1,6 @@
 import { Main } from "./App.styles"
 import { About } from "./components/About"
+import { General } from "./components/General"
 import { Header } from "./components/Header"
 
 
@@ -11,7 +12,7 @@ function App() {
     <Main>
       <Header />
       <About />
-      
+      <General />      
     </Main>
   )
 }

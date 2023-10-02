@@ -10,6 +10,11 @@ interface Talent {
     
 }
 
+interface Gallery {
+    id: number;
+    image : string
+}
+
 interface Experience {
     title: string;
     place: string;
@@ -17,7 +22,8 @@ interface Experience {
     about: string;
     product: string;
     functions: string[];
-    skills: string[]
+    skills: string[];
+    gallery: Gallery[]
 }
 
 interface Training {
@@ -32,6 +38,16 @@ interface Training {
         level: string
     }[],
     tools: string[]
+}
+
+export interface Project {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    technologies: string[]
+    repository: string;
+    deploy: string;
 }
 
 
@@ -65,7 +81,41 @@ export const experience: Experience[] = [
             'Control de versiones con Git',
             'Gestión de trabajo colaborativo con Gitlab'
         ],
-        skills: ['HTML', 'CSS', 'TypeScript', 'Next.Js', 'Redux', 'React hook form', 'React query', 'Styled components', 'GitLab']
+        skills: ['HTML', 'CSS', 'TypeScript', 'Next.Js', 'Redux', 'React hook form', 'React query', 'Styled components', 'GitLab'],
+        gallery: [
+            {
+                id: 1,
+                image: "/DigitalMoney/1.jpg"                
+            },
+            {
+                id: 2,
+                image: "/DigitalMoney/2.jpg"                
+            },
+            {
+                id: 3,
+                image: "/DigitalMoney/3.jpg"                
+            },
+            {
+                id: 4,
+                image: "/DigitalMoney/4.jpg"                
+            },
+            {
+                id: 5,
+                image: "/DigitalMoney/5.jpg"                
+            },
+            {
+                id: 6,
+                image: "/DigitalMoney/6.jpg"                
+            },
+            {
+                id: 7,
+                image: "/DigitalMoney/7.jpg"                
+            },
+            {
+                id: 8,
+                image: "/DigitalMoney/8.jpg"                
+            },
+        ]
     },
     {
         title: 'Desarrollador Front End',
@@ -80,7 +130,54 @@ export const experience: Experience[] = [
             'Control de versiones con Git',
             'Gestión de trabajo colaborativo con Gitlab'
         ],
-        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Styled components', 'GitLab']
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Styled components', 'GitLab'],
+        gallery: [
+            {
+                id: 1,
+                image: "/DigitalBooking/1.png"
+                
+            },
+            {
+                id: 2,
+                image: "/DigitalBooking/2.png"
+                
+            },
+            {
+                id: 3,
+                image: "/DigitalBooking/3.png"
+                
+            },
+            {
+                id: 4,
+                image: "/DigitalBooking/4.png"
+                
+            },
+            {
+                id: 5,
+                image: "/DigitalBooking/5.png"
+                
+            },
+            {
+                id: 6,
+                image: "/DigitalBooking/6.png"
+                
+            },
+            {
+                id: 7,
+                image: "/DigitalBooking/7.png"
+                
+            },
+            {
+                id: 8,
+                image: "/DigitalBooking/8.png"
+                
+            },
+            {
+                id: 9,
+                image: "/DigitalBooking/9.png"
+                
+            },
+        ]
     }
 ]
 
@@ -115,3 +212,24 @@ export const training : Training = {
     ],
     tools: ['Visual Studio Code', 'Postman', 'GitLab', 'GitHub', 'Figma', 'Adobe Illustrator', 'Adobe Photoshop']
 }
+
+export const projects : Project[] = [
+    {
+        id: 1,
+        image: '/Projects/rickAndMorty.png',
+        title: 'Rick and Morty',
+        description: 'Desafio técnico, aplicación de busqueda de personajes',
+        technologies: ['Next.js, GraphQL, Tailwind, TypeScript'],
+        repository: 'https://github.com/SantiagoAlvarez1991/rick-and-morty-challenge',
+        deploy: 'https://rick-and-morty-challenge-olive.vercel.app/'
+    },
+    {
+        id: 2,
+        image: '/Projects/marvel.png',
+        title: 'Marvel comics',
+        description: 'Ejercicio académico, tienda de comics',
+        technologies: ['Next.js, API REST, Material UI, TypeScript, Jest'],
+        repository: 'https://github.com/SantiagoAlvarez1991/ctd-esp-fe3-final',
+        deploy: 'https://ctd-esp-fe3-final-amber.vercel.app/'
+    },
+]
